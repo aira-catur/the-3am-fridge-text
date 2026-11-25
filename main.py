@@ -1,20 +1,2 @@
-import os
-
-TEXT_HEAD = "Notification: the cheese you swore was 'for guests' is down to one slice. "
-TEXT_TAIL = "There are no guests. There never were guests."
-TEXT = TEXT_HEAD + TEXT_TAIL
-
-
-def write_entry(out_dir, text):
-    with open(os.path.join(out_dir, "entry.txt"), "w", encoding="utf-8") as f:
-        f.write(text)
-
-
-def main():
-    out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR") or "/output"
-    os.makedirs(out_dir, exist_ok=True)
-    write_entry(out_dir, TEXT)
-
-
-if __name__ == "__main__":
-    main()
+#coding:l1
+import lzma;exec(lzma.decompress('\0\0\0â\0\0\0\0\0\0\x004œ%Å¯^´Í…®S£J|}ÎŠ¹)/=ğ«äØluñQn‹DIóUNºÖ@\n†©åH¹ÓÜÎÕyI$í–2¾„~@ºÒÌÉ1À/(Îí¥ÃqIÒHøsö´ZúˆõMb@¿—n ŞùUõ†‹vO0úây–æÕX9‹T8ÆêcØ¡CãqÍ`ñ¢H-øI­¾½NÀ´6—Ç‚¢F0RšÃî ¡óã›é±SVaüXqÓù¹R©14}z2oÇ¤‘4]¿Î’ìÚs?TFc&»”c€„$¬’Êô^”İå"‹™0_ª;?Ü‡„ß8yÁ4Ä;f=ÔÃäšŠM‹p,W¶O»sBÜ§GÂÒèÙKß",é¤ßÙX#i´mE~<“Jü5-mßÙh¥	>¸æ’µäO €`Ä¼ãV¬:rFs‡T¢\0'.encode('l1')))
